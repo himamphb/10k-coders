@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizzadata</title>
+    <style>  
+        body {
+            background-image: url(food-pizza-baking.jpg);
+            background-size: cover;
+
+        }        
+        .header img {
+            border-radius: 250px;
+            padding: 40px;
+            width: 100px;
+            transform:rotate(330deg);  
+        
+        }
+        fieldset {
+            display: block;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding-top: 0.35em;
+            padding-bottom: 0.625em;
+            padding-left: 0.75em;
+            padding-right: 0.75em;
+            border: 2px groove (internal value);
+         }
+                    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="wop.webp" alt="world of pizza logo"/>
+    </div>
+    <form action="">
+        <fieldset>
+            <legend style="background-color:chartreuse;">pizza size</legend>
+            <label for="regularpizza">regular</label><input type="radio" id="regularpizza" name="regular">
+            <label for="small">small</label><input type="radio" name="small" id="small">
+            <label for="large">large</label><input type="radio" name="large" id="large">
+            <label for="medium">medium</label><input type="radio" name="medium" id="medium">
+            <label for="family">family</label><input type="radio" name="family" id="family">
+        </fieldset>
+        <fieldset>
+            <legend style="background-color:aquamarine">extra cheese</legend>
+            <label for="yes">yes</label><input type="radio" name="yes" id="yes">
+            <label for="No">No</label><input type="radio" name="No" id="No">
+        </fieldset>
+        <fieldset>
+            <legend><b>extra toppings</b></legend>
+            <label for="toppings">select</label><br>
+            <select id="toppings">
+                <option value="none">none</option>
+                <option value="Margherita pizza">Margherita pizza</option>
+                <option value="supreme pizza">supreme pizza </option>
+                <option value="Cheese pizza">Cheese pizza</option>
+              </select>
+        </fieldset>
+         <fieldset>
+            <legend>delivery</legend>
+            <label for="takeaway">takeaway</label><input type="radio" name="takeaway" id="takeaway">
+            <label for="delivery">delivery</label><input type="radio" name="delivery" id="delivery">
+         </fieldset>
+         <br>
+         <label for="payment">payment</label>
+         <select id="payment">
+            <option value="none">none</option>
+            <option value="online">online</option>
+            <option value="COD">COD</option>
+         </select>
+         <br>
+         <fieldset>
+            <legend>address</legend>
+            <br><br>
+         </fieldset>
+         <br>
+         <input type="submit" value="place your order">
+    </form>
+</body>   
+</html>
